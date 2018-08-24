@@ -1,0 +1,169 @@
+extends ../base
+
+block title
+	title Organisation
+
+block main
+	.content.content-divisions.content-org
+		section.section.banner-org(style='background-image: url(' + require("./images/background-org.jpg") + ')')
+			.banner-div_overlay
+				.container
+					h1 Молодіжна організація
+					ul 
+						li 
+							a(href="./") Головна
+						li 
+							a(href="divisions.html") Підрозділи
+						
+						li 
+							a(href="org.html") Молодіжна організація
+		section.section.fac-types
+			.container.container_content
+				section.slider.slick-divisions
+					div
+						div.row
+							.fac-types_block
+								div.col-sm-6.col-xs-12.col-sm-push-6
+									.fac-types_block_img(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+								div.col-sm-6.col-xs-12.col-sm-pull-6
+									p.fac-types_block_post Голова Молодіжної організації ХНЕУ ім. С. Кузнеця 
+									h5.fac-types_block_name Лисицька Дар’я Дмитрівна
+									p.fac-types_block_text.
+										Молодіжна організація ХНЕУ ім. С. Кузнеця – це орган студентського самоврядування університету.
+										Головна мета організації – привернення студентів до активної участі у студентському житті, захист, презентація та реалізація їх прав та інтересів, створення умов для самореалізації особистості студентів, формування в них лідерських компетенцій, підвищення рівня професійної підготовки.
+					div
+						div.row
+							.fac-types_block
+								div.col-sm-6.col-xs-12.col-sm-push-6
+									.fac-types_block_img(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+								div.col-sm-6.col-xs-12.col-sm-pull-6
+									p.fac-types_block_post Голова Молодіжної організації ХНЕУ ім. С. Кузнеця 
+									h5.fac-types_block_name Лисицька Дар’я Дмитрівна
+									p.fac-types_block_text.
+										Молодіжна організація ХНЕУ ім. С. Кузнеця – це орган студентського самоврядування університету.
+										Головна мета організації – привернення студентів до активної участі у студентському житті, захист, презентація та реалізація їх прав та інтересів, створення умов для самореалізації особистості студентів, формування в них лідерських компетенцій, підвищення рівня професійної підготовки.	
+				.fac-types_quote
+					h3
+						| Молодiжна органiзацiя
+						br
+						| ХНЕУ iм. С. Кузнеця –
+						br
+						| це орган студентського 
+						br
+						| самоврядування унiверситету.
+		section.section.org-gallery
+			.container.container_content
+				section.slider.slick-div-gallery
+					div
+						.slick-div-gallery_box(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+							.slick-div-gallery_overlay
+								.slick-div-gallery_inner
+									p Photo 1
+									a(href="#") Напишіть про фото
+									a(href=require("./images/org-chief.jpg"), data-fancybox="gallery").circle
+										span.cross.cross-v
+										span.cross.cross-h
+					div
+						.slick-div-gallery_box(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+							.slick-div-gallery_overlay
+								.slick-div-gallery_inner
+									p Photo 1
+									a(href="#") Напишіть про фото
+									a(href=require("./images/org-chief.jpg"), data-fancybox="gallery").circle
+										span.cross.cross-v
+										span.cross.cross-h
+					div
+						.slick-div-gallery_box(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+							.slick-div-gallery_overlay
+								.slick-div-gallery_inner
+									p Photo 1
+									a(href="#") Напишіть про фото
+									a(href=require("./images/org-chief.jpg"), data-fancybox="gallery").circle
+										span.cross.cross-v
+										span.cross.cross-h
+					div
+						.slick-div-gallery_box(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+							.slick-div-gallery_overlay
+								.slick-div-gallery_inner
+									p Photo 1
+									a(href="#") Напишіть про фото
+									a(href=require("./images/org-chief.jpg"), data-fancybox="gallery").circle
+										span.cross.cross-v
+										span.cross.cross-h
+					div
+						.slick-div-gallery_box(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+							.slick-div-gallery_overlay
+								.slick-div-gallery_inner
+									p Photo 1
+									a(href="#") Напишіть про фото
+									a(href=require("./images/org-chief.jpg"), data-fancybox="gallery").circle
+										span.cross.cross-v
+										span.cross.cross-h
+					div
+						.slick-div-gallery_box(style='background-image:url(' + require("./images/org-chief.jpg") + ')')
+							.slick-div-gallery_overlay
+								.slick-div-gallery_inner
+									p Photo 1
+									a(href="#") Напишіть про фото
+									a(href=require("./images/org-chief.jpg"), data-fancybox="gallery").circle
+										span.cross.cross-v
+										span.cross.cross-h
+		section.section.fac-programs
+			.container.container_content
+				div.row
+					.fac-programs_blk
+						div.col-md-6
+							.fac-programs_box
+								h4.fac-programs_name Напрями діяльності:
+								ul.fac-programs_menu
+									li Положення Студентське самоврядування ХНЕУ ім. С. Кузнеця
+									li Положення МО ХНЕУ ім. С. Кузнеця
+									li Положення ДК ХНЕУ ім. С. Кузнеця
+									li Положення Спільнота ХНЕУ ім. С. Кузнеця
+									li Положення Спортклуб ХНЕУ ім. С. Кузнеця
+									li Звіт про діяльність МО за 2014-2015 рік
+									li Звіт про діяльність МО за 2015-2016 рік
+						div.col-md-6
+							.fac-programs_img(style='background-image: url(' + require("./images/photo-9.jpg") + ')')
+		section.section.contact-us
+			.contact-us_overlay
+				.container.container_content
+					div.row
+						.contact-us_blk
+							div.col-md-6
+								.contact-us_title Contact us
+							div.col-md-6
+								p.contact-us_text Зв'язок з нами
+								ul.contact-us_menu
+									li.contact-us_menu_list.
+										61166, м. Харків, пр-т Науки, 9а,
+										ХНЕУ ім. С. Кузнеця, 2 навчальний корпус, аудиторія 18.
+									li.contact-us_menu_list 
+										a(href="tel:+380577021190") Тел. +38 (057) 702-11-90; (4-52)
+									li.contact-us_menu_list 
+										a(href="mailto:mo.khnue@gmail.com") E-mail: mo.khnue@gmail.com
+									li.contact-us_menu_list 
+										a(href="http://www.mo.hneu.edu.ua") Сайт: http://www.mo.hneu.edu.ua/
+								ul.contact-us_social
+									li
+										a(href="#").btn.btn-social-icon
+											span.fa.fa-instagram
+									//- li
+									//- 	a(href="#").btn.btn-social-icon
+									//- 		span.fa.fa-vk
+									li
+										a(href="#").btn.btn-social-icon
+											span.fa.fa-facebook
+									li
+										a(href="#").btn.btn-social-icon
+											span.fa.fa-twitter
+									li
+										a(href="#").btn.btn-social-icon
+											span.fa.fa-youtube
+		section.section
+			.container.container_content
+				p.views Кiлькiсть переглядiв:
+					span 30000
+		section.section.map
+			.map_blk#map
+		include ../footer

@@ -1,0 +1,16 @@
+.content-article {
+	.news_box {
+		padding-bottom: 170px;
+	}
+	.fac-types_quote {
+		margin-top: 30px;
+		padding: 20px 0;
+		text-align: center;
+		h3 {
+			font-size: 40px;
+			&:before {
+				top: -35px;
+			}
+		}
+	}
+}

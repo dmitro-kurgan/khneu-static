@@ -1,0 +1,182 @@
+.content-org {
+	.contact-us {
+		// margin-bottom: 110px;
+		&_menu {
+			&_list {
+				&:first-child {
+					&:before {
+						background-position: -30px;
+						width: 23px;
+						height: 30px;
+					}
+				}
+				&:nth-child(2) {
+					&:before {
+						background-position: -56px;
+						width: 30px;
+					}
+				}
+				&:nth-child(3) {
+					&:before {
+						background-position: -151px;
+					}
+				}
+				&:nth-child(4) {
+					&:before {
+						background-position: -118px;
+					}
+				}
+			}
+		}
+	}
+	.fac-types {
+		padding: 100px 0 110px 0;
+		&_quote {
+
+		}
+	}
+	.fac-programs {
+		padding: 110px 0 110px 0;
+		@media #{$mobile} {
+			padding-top: (110px/2.2);
+			padding-bottom: (110px/2.2);
+		}
+		&_menu {
+			li {
+				list-style-type: disc;
+			}
+		}
+		&_img {
+			@include addPrefix (filter, grayscale(0%));
+			@media #{$tablet} {
+				display: none;
+			}
+		}
+	}
+	.slick-div-gallery {
+		max-width: 1450px;
+		margin: auto;
+		&_box {
+			background-position: center;
+			background-size: cover;
+			min-height: 370px;
+			width: 370px;
+			margin: auto;
+			// @include addPrefix(filter, grayscale(100%));
+			@media #{$desctop-lg} {
+				width: (375px/1.143);
+				min-height: (375px/1.143);
+			}
+			@media #{$desctop-md} {
+				width: (375px/1.29);
+				min-height: (375px/1.29);
+			}
+			@media #{$desctop} {
+				width: (370px/1.7);
+				min-height: (375px/1.7);
+			}
+		}
+		&_overlay {
+			background-color: rgba(0, 0, 0, 0.5);
+			min-height: inherit;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: $main_transition;
+			&:hover {
+				opacity: 1;
+			}
+			@media #{$mobile} {
+				opacity: 1;
+			}
+		}
+		&_inner {
+			text-align: center;
+		}
+		p {
+			display: block;
+			font: 400 normal 66px $Argon;
+			@media #{$desctop-md} {
+				font-size: (66px/1.29);
+			}
+			@media #{$desctop} {
+				font-size: (66px/1.33);
+			}
+			@media #{$tablet} {
+				font-size: (66px/1.7);
+			}
+		}
+		a {
+			font: 700 normal 20px $Bitter;
+			@media #{$desctop-md} {
+				font-size: (20px/1.29);
+			}
+			@media #{$desctop} {
+				font-size: (20px/1.33);
+			}
+			@media #{$tablet} {
+				font-size: (20px/1.7);
+			}
+		}
+		.circle {
+			margin: auto;
+			width: 45px;
+			height: 45px;
+			border: 5px solid $main_color;
+			border-radius: 50%;
+			line-height: 1;
+			margin-top: 10px;
+			position: relative;
+			display: block;
+			.cross {
+				height: 5px;
+				width: 20px;
+				background-color: $main_color;
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+				margin: auto;
+			}
+			.cross-v {
+				@include addPrefix(transform, rotate(-90deg) translate3d(0, 0, 0));
+			}
+		}
+		.slick-next, .slick-prev {
+			background-color: $grey2;
+			width: 45px;
+			height: 45px;
+			&:hover {
+				background-color: #000;
+			}
+			&:before {
+				border-color: $main_color;
+				
+				padding: 2px;
+			}
+		}
+		.slick-prev {
+			padding-left: 6px;
+			left: -50px;
+			@media #{$tablet} {
+				left: -10px;
+			}
+		}
+		.slick-next {
+			padding-right: 6px;
+			right: -50px;
+			@media #{$tablet} {
+				right: -10px;
+			}
+		}
+	}
+	.views {
+		margin-bottom: 110px;
+		text-align: left;
+		@media #{$mobile} {
+			margin-top: 30px;
+		}
+	}
+}

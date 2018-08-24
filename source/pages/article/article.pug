@@ -1,0 +1,106 @@
+extends ../base
+
+block title
+	title Article
+
+block main
+	.content.content-news.content-article
+		section.section.banner-news(style='background-image: url(' + require("./images/background-org.jpg") + ')')
+			.banner-div_overlay
+				.container
+					h1 News
+		section.section.news
+			.container
+				ul.row
+					li.col-md-7
+						.news_blk
+							.news_box
+								.news_box_img(style='background-image: url(' + require("./images/photo-11.jpg") + ');')
+								h4.news_box_name Назва новини
+								span.news_box_category Освіта
+									span.news_box_icon.edu
+								p.news_box_text.
+									9 жовтня 2017 року провідним спеціалістом відділу судової роботи та міжнародного співробітництва Головного територіального управління юстиції у Харківській області Парамоновою Л. В. для Молодіжної організації Харківського національного економічного університету імені Семена Кузнеця було проведено лекцію на тему: «Основні напрями діяльності Головного територіального управління юстиції у Харківській області».
+								.fac-types_quote
+									h3
+										| Молодiжна органiзацiя
+										br
+										| ХНЕУ iм. С. Кузнеця –
+										br
+										| це орган студентського 
+										br
+										| самоврядування унiверситету.
+								p.news_box_text.
+									У ході лекції були висвітлені питання щодо основних завдань та напрямів діяльності Головного територіального управління юстиції у Харківській області, в тому числі у сфері міжнародної правової допомоги у цивільних, сімейних та кримінальних справах та наголошено на правах, свободах та обов’язках людини як громадянина, роз’яснено механізми захисту своїх прав в судовому порядку.
+									Також присутніх було проінформовано про загальнонаціональний правопросвітницький проект «Я МАЮ ПРАВО!».
+								.news_box_bottom
+									ul.row
+										li.col-md-6
+											p.news_box_data Вересень 28, 2017
+										li.col-md-6
+											.share
+												p Поділитись:
+												ul.news_box_social
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-instagram
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-twitter
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-facebook
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-youtube-play
+					li.col-md-5
+						.news_right
+							form.form(role='search')
+								.input-group
+									input#srch-term.form-control(type='text', placeholder='Пошук', name='srch-term')
+									.input-group-btn
+										button.btn(type='submit') Пошук
+							h5.title Архів Новин
+							.months#accordion-month.panel-group
+								.panel
+									#collapse1.panel-collapse
+										.panel-body
+											ul.list
+												li 
+													a(href="#") Серпень 2017
+												li 
+													a(href="#") Липень 2017
+												li 
+													a(href="#") Червень 2017
+												li 
+													a(href="#") Травень 2017
+												li 
+													a(href="#") Квітень 2017
+								.panel
+									a(data-toggle='collapse', data-parent='#accordion-month', href='#collapse2').show-more
+									#collapse2.panel-collapse.collapse
+										.panel-body
+											ul.list
+												li 
+													a(href="#") Березень 2017
+												li 
+													a(href="#") Лютий 2017
+												li 
+													a(href="#") Січень 2017
+												li 
+													a(href="#") Грудень 2016
+												li 
+													a(href="#") Листопад 2016
+												li 
+													a(href="#") Жовтень 2016
+												li 
+													a(href="#") Вересень 2016
+							h5.title Категорія
+							ul.list
+								li 
+									a(href="#") Освіта
+								li 
+									a(href="#") Відпочинок
+		section.section.map
+			.map_blk#map
+		include ../footer

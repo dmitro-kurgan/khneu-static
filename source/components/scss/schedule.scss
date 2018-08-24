@@ -1,0 +1,253 @@
+.content-schedule {
+	h1 {
+		font: 400 normal 58px $Posterizer;
+		line-height: 1;
+		@media #{$desctop} {
+			font-size: (58px/1.3);
+		}
+		@media #{$tablet} {
+			font-size: (58px/1.7);
+		}
+		@media #{$mobile} {
+			font-size: (58px/2.2);
+		}
+	}
+}
+.schedule {
+	color: $grey;
+	&_blk {
+		max-width: 1450px;
+		margin: auto;
+		padding: 120px 0;
+		@media #{$mobile} {
+			padding-top: (120px/2.2);
+			padding-bottom: (120px/2.2);
+		}
+	}
+	&_classes {
+		min-height: 570px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #b5b5b4;
+		padding: 0 30px 0 0;
+		@media #{$tablet} {
+			margin-top: 30px;
+		}
+		.table {
+			margin-bottom: 0px;
+			tr {
+				line-height: 75px;
+				height: 75px;
+				td {
+					font: 400 normal 21px $Bitter;
+					color: #696868;
+					border: none;
+					padding: 0px;
+					vertical-align: middle;
+					@media #{$desctop} {
+						font-size: (21px/1.33);
+					}
+					&:first-child {
+						color: $lighter-grey;
+						font: 400 normal 25px $Posterizer;
+						@media #{$desctop} {
+							font-size: (25px/1.33);
+						}
+					}
+					p {
+						text-align: center;
+					    width: 110px;
+					    margin: auto;
+					    padding: 10px 0;
+					    letter-spacing: 0.8px;
+					    @media screen and (max-width: 420px) {
+					    	padding: 21px 0;
+					    }
+					}	
+					&:last-child {
+						p {
+							width: 100%;
+							padding: 14px 0 14px 25px;
+							text-align: left;
+						}
+				    }
+				}
+			}
+			tr.active {
+				td {
+					background-color: transparent;
+					p {
+						background-color: $grey;
+						color: $main_color;	
+					}
+					&:first-child {
+						p {
+							background-color: $lighter-grey;
+						}
+					}
+				}
+			}
+		}
+	}
+	&_time {
+		border: 1px solid #b5b5b4;
+		min-height: 220px;
+		width: 100%;
+		display: table;
+		@media #{$mobile} {
+			min-height: 150px;
+			text-align: center;
+		}
+		&_box {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.time {
+		font: 400 normal 115px $Argon;
+		width: 550px;
+		margin: auto;
+		line-height: 1;
+		@media #{$desctop-md} {
+			font-size: (115px/1.29);
+			width: (550px/1.29);
+		}
+		@media #{$mobile} {
+			width: 280px;
+			font-size: (115px/2);
+		}
+	}
+	.location {
+		font: 400 normal 27px $Bitter;
+		color: $light-grey;
+		width: 550px;
+		margin: auto;
+		line-height: 1;
+		@media #{$desctop-md} {
+			width: (550px/1.29);
+			font-size: (27px/1.29);
+		}
+		@media #{$mobile} {
+			width: 280px;
+			font-size: (27px/2);
+		}
+	}
+	&_day {
+		border: 1px solid #b5b5b4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		min-height: 320px;
+		margin-top: 30px;
+		@media #{$mobile} {
+			display: block;
+			padding: 0 20px 20px 20px;
+		}
+		.today {
+			width: 50%;
+			display: inline-block;
+			font: 400 normal 46px $Argon;
+			@media #{$desctop-md} {
+				font-size: (46px/1.29);
+				width: 45%;
+			}
+			@media #{$desctop} {
+				font-size: (46px/1.33);
+			}
+			@media #{$tablet} {
+				width: 50%;
+			}
+			@media #{$mobile} {
+				width: 100%;
+				margin-bottom: 20px;
+				// display: block;
+			}
+			.day {
+				font-size: 156px;
+				line-height: 1;
+				@media #{$desctop-md} {
+					font-size: (156px/1.29);
+				}
+				@media #{$desctop} {
+					font-size: (156px/1.33);
+				}
+			}
+			.month {
+				line-height: 1;
+			}
+		}
+		.calendar {
+			width: 50%;
+			display: inline-block;
+			font: 400 normal 18px $Bitter;
+			@media #{$desctop-md} {
+				width: 55%;
+			}
+			@media #{$tablet} {
+				width: 50%;
+			}
+			@media #{$mobile} {
+				width: 100%;
+				// display: block;
+			}
+			table {
+				width: 320px;
+				margin-bottom: 0px;
+				@media #{$desctop-lg} {
+					width: 280px;
+				}
+				@media #{$desctop} {
+					width: 230px;
+				}
+				@media #{$mobile} {
+					margin: auto;
+				}
+				tr,td {
+					border: none;
+				}
+				tr {
+					line-height: 1;
+    				height: 30px;
+					&:nth-child(2) {
+						display: none;
+					}
+					&:last-child {
+						td {
+							color: $grey !important;
+						}
+					}
+					td {
+						text-align: center;
+						vertical-align: middle;
+						&:last-child {
+							color: #b21a2b;
+						}
+					}
+				}
+				td {
+					padding: 0px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+	&_name {
+		font-size: 23px;
+		text-transform: uppercase;
+		padding-left: 50px;
+		margin-top: 40px;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			width: 40px;
+			height: 40px;
+			background: url(../images/schedule.png)no-repeat center;
+			background-size: cover;
+			left: 0px;
+			margin-top: -12px;
+		}
+	}
+}

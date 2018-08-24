@@ -1,0 +1,167 @@
+extends ../base
+
+block title
+	title News
+
+block main
+	.content.content-news
+		section.section.banner-news(style='background-image: url(' + require("./images/background-org.jpg") + ')')
+			.banner-div_overlay
+				.container
+					h1 News
+		section.section.news
+			.container
+				ul.row
+					li.col-md-5.col-xs-12.col-md-push-7
+						.news_right
+							form.form(role='search')
+								.input-group
+									input#srch-term.form-control(type='text', placeholder='Пошук', name='srch-term')
+									.input-group-btn
+										button.btn(type='submit') Пошук
+							h5.title Архів Новин
+							.months#accordion-month.panel-group
+								.panel
+									#collapse1.panel-collapse
+										.panel-body
+											ul.list
+												li 
+													a(href="#") Серпень 2017
+												li 
+													a(href="#") Липень 2017
+												li 
+													a(href="#") Червень 2017
+												li 
+													a(href="#") Травень 2017
+												li 
+													a(href="#") Квітень 2017
+								.panel
+									a(data-toggle='collapse', data-parent='#accordion-month', href='#collapse2').show-more
+									#collapse2.panel-collapse.collapse
+										.panel-body
+											ul.list
+												li 
+													a(href="#") Березень 2017
+												li 
+													a(href="#") Лютий 2017
+												li 
+													a(href="#") Січень 2017
+												li 
+													a(href="#") Грудень 2016
+												li 
+													a(href="#") Листопад 2016
+												li 
+													a(href="#") Жовтень 2016
+												li 
+													a(href="#") Вересень 2016
+							h5.title Категорія
+							ul.list
+								li 
+									a(href="#") Освіта
+								li 
+									a(href="#") Відпочинок
+					li.col-md-7.col-xs-12.col-md-pull-5
+						.news_blk
+							.news_box
+								.news_box_img(style='background-image: url(' + require("./images/photo-11.jpg") + ');')
+								h4.news_box_name Назва новини
+								span.news_box_category Освіта
+									span.news_box_icon.edu
+								p.news_box_text.
+									21 вересня 2017 року студенти та викладачі кафедри управління соціальними комунікаціями ХНЕУ ім. С. Кузнеця у рамках договору про співпрацю відвідали українське підприємство європейського рівня /
+								a(href="article.html") Читати ще
+								.news_box_bottom
+									ul.row
+										li.col-sm-6
+											p.news_box_data Вересень 28, 2017
+										li.col-sm-6
+											.share
+												p Поділитись:
+												ul.news_box_social
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-instagram
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-twitter
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-facebook
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-youtube-play
+							.news_box
+								.news_box_img(style='background-image: url(' + require("./images/photo-13.jpg") + ')')
+								h4.news_box_name Назва новини
+								span.news_box_category Освіта
+									span.news_box_icon.edu
+								p.news_box_text.
+									21 вересня 2017 року студенти та викладачі кафедри управління соціальними комунікаціями ХНЕУ ім. С. Кузнеця у рамках договору про співпрацю відвідали українське підприємство європейського рівня /
+								a(href="article.html") Читати ще
+								.news_box_bottom
+									ul.row
+										li.col-sm-6
+											p.news_box_data Вересень 28, 2017
+										li.col-sm-6
+											.share
+												p Поділитись:
+												ul.news_box_social
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-instagram
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-twitter
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-facebook
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-youtube-play
+							.news_box
+								.news_box_img(style='background-image: url(' + require("./images/photo-12.jpg") + ')')
+								h4.news_box_name Назва новини
+								span.news_box_category Освіта
+									span.news_box_icon.edu
+								p.news_box_text.
+									21 вересня 2017 року студенти та викладачі кафедри управління соціальними комунікаціями ХНЕУ ім. С. Кузнеця у рамках договору про співпрацю відвідали українське підприємство європейського рівня /
+								a(href="article.html") Читати ще
+								.news_box_bottom
+									ul.row
+										li.col-sm-6
+											p.news_box_data Вересень 28, 2017
+										li.col-sm-6
+											.share
+												p Поділитись:
+												ul.news_box_social
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-instagram
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-twitter
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-facebook
+													li
+														a(href="#").btn.btn-social-icon
+															span.fa.fa-youtube-play
+						.news_pagination
+							.pagination-block
+								.pagination.loop-pagination
+									a.prev.page-numbers(href='#')
+										i.arrow.left
+									a.page-numbers(href='#') 1
+									span.page-numbers.current 2
+									a.page-numbers(href='#') 3
+									span.page-numbers.dots …
+									a.page-numbers(href='#') 10
+									a.next.page-numbers(href='#')
+										i.arrow.right
+		section.section
+			.container
+				p.views Кiлькiсть переглядiв:
+					span 30000
+		section.section.map
+			.map_blk#map
+		include ../footer

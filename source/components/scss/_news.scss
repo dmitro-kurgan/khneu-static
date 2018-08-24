@@ -1,0 +1,257 @@
+.content-news {
+	.views {
+		margin-bottom: 110px;
+		margin-top: 0px;
+	}
+}
+.banner-news {
+	h1 {
+		font: 400 normal 117px $Argon;
+	}
+}
+.news {
+	padding: 85px 0 0 0;
+	&_right {
+		max-width: 370px;
+		margin: auto;
+		@media #{$tablet} {
+			margin-bottom: 60px;
+		}
+		.panel {
+			box-shadow: none;
+			border: none;
+		}
+		.panel-body {
+			padding: 0px;
+		}
+		.months {
+			.show-more {
+				display: inline-block;
+				position: relative;
+				width: 20px;
+				height: 20px;
+				&:after {
+					content: '';
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top: 2px;
+					right: 0px;
+					background-color: $grey;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					z-index: 1;
+					right: 0px;
+					width: 9px;
+					height: 9px;
+					top: 2px;
+					border-right: 2px solid $main_color;
+					border-top: 2px solid $main_color;
+					transform: rotate(135deg);
+					margin-right: 5.55px;
+					margin-top: 3px;
+				}
+			}
+		}
+	}
+	.form {
+		input {
+			width: 250px;
+			height: 45px;
+			border-radius: 0px;
+			border: 1px solid #000;
+			@include addPrefixPlaceholder (placeholder, font-size, 16px);
+			@media #{$mobile} {
+				width: 100%;
+			}
+		}
+		.btn {
+			width: 110px;
+			height: 45px;
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $main_color;
+		}
+	}
+ 	h5 {
+ 		color: $grey;
+ 		margin-top: 15px;
+ 		font: 600 normal 25px $Bitter;
+ 		margin-bottom: 10px;
+ 	}
+ 	.list {
+ 		li {
+ 			color: #7d7c7c;
+ 			font: 400 normal 21px $Bitter;
+ 			padding: 15px 0;
+ 			border-bottom: 1px solid #7d7c7c;
+ 			margin-bottom: 10px;
+ 		}
+ 	}
+ 	&_box {
+ 		color: $grey;
+ 		margin-top: 90px;
+ 		&:first-child {
+ 			margin-top: 0px;
+ 		}
+ 		&_img {
+ 			background-position: center;
+ 			background-size: cover;
+ 			background-repeat: no-repeat;
+ 			min-height: 460px;
+ 		}
+ 		&_name {
+ 			font-size: 26px;
+ 			text-transform: uppercase;
+ 			margin-top: 25px;
+ 			margin-bottom: 5px;
+ 		}
+ 		&_category {
+ 			padding-left: 35px;
+ 			position: relative;
+ 			font: 400 normal 17px $Bitter;
+ 			color: $light-grey;
+ 		}
+ 		&_icon {
+ 			background-position: center;
+ 			background-size: cover;
+ 			background-repeat: no-repeat;
+ 			display: block;
+ 		}
+ 		.edu {
+ 			position: absolute;
+ 			top: 0px;
+ 			left: 0px;
+ 			background-image: url(../images/edu.png);
+ 			width: 30px;
+ 			height: 30px;
+ 			margin-top: -5px;
+ 			display: block;
+ 		}
+ 		&_text {
+ 			font: 400 normal 21px $Bitter;
+ 			margin-top: 28px;
+ 			line-height: 2;
+ 			color: $light-grey;
+ 		}
+ 		a {
+ 			font: 600 normal 17px $Bitter;
+ 			&:hover {
+ 				text-decoration: underline;
+ 			}
+ 		}
+ 		&_bottom {
+ 			margin-top: 35px;
+ 			border-bottom: 1.5px solid #cdcdcd;
+ 			border-top: 1.5px solid #cdcdcd;
+ 			padding: 15px 0;
+ 		}
+ 		&_data {
+ 			padding: 6px 0;
+ 		}
+ 		.share {
+ 			text-align: right;
+ 			@media #{$mobile} {
+ 				text-align: left;
+ 				margin-top: 10px;
+ 			}
+ 			p {
+ 				display: inline-block;
+ 				margin-right: 20px;
+ 			}
+ 		}
+ 		&_social {
+ 			display: inline-block;
+ 			li {
+ 				display: inline-block;
+ 				a {
+ 					background-color: transparent;
+ 					margin-right: 8px;
+ 					&:last-child {
+ 						margin-right: 0px;
+ 					}
+ 				}
+ 				span {
+ 					&:before {
+ 						color: #cdcdcd;
+ 						transition: $main_transition;
+ 					}
+ 					&:hover {
+ 						&:before {
+ 							color: $grey;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	&_pagination {
+	 	.pagination-block {
+			display: flex;
+			justify-content: flex-end;
+			@media #{$tablet} {
+				justify-content: center;
+			}
+			.pagination {
+				display: inherit;
+				margin: 25px 0 30px 0;
+				.page-numbers {
+					color: $grey2;
+					font-size: 18px;
+					width: 33px;
+					height: 33px;
+					border: 2px solid $grey2;
+					margin-right: 5px;
+					transition: .3s all;
+					&:hover {
+						background-color: $grey2;
+						color: $main_color;
+					}
+				}
+				.page-numbers, .current {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.current {
+					background-color: $grey2;
+					color: $main_color;
+				}
+				.prev, .next {
+					width: 33px;
+					height: 33px;
+					border: 1px solid #414141;
+					padding: 0px;
+					transition: .3s all;
+					background-color: $grey2;
+					&:hover {
+						background-color: $main_color;
+						i {
+							border-color: $grey2;
+						}
+					}
+				}
+				i {
+				    border: solid $main_color;
+				    border-width: 0 2px 2px 0;
+				    display: inline-block;
+				    padding: 3px;
+				    margin: 2px 0;
+				}
+				.right {
+				    transform: rotate(-45deg);
+				    -webkit-transform: rotate(-45deg);
+				    margin-right: 5px;
+				}
+				.left {
+				    transform: rotate(135deg);
+				    -webkit-transform: rotate(135deg);
+				    margin-left: 5px;
+				}	
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+// VARIABLES
+
+//fonts
+$Bitter: Lora, Arial, sans-serif;
+$Raleway: Raleway, Arial, sans-serif;
+$Posterizer: PlayfairDisplay, Arial, sans-serif;
+$Argon: Argon, Arial, sans-serif;
+$Adelle: AdelleCyrillic, Arial, sans-serif;
+$Russian: ClassicRussian, Arial, sans-serif;
+//other
+$main_color: #fff;
+$grey: #2a2a2a;
+$grey2: #414141;
+$dark-grey: #252424;
+$light-grey: #626060;
+$lighter-grey: #969696;
+$main_font-size: 22px;
+$main_transition: .5s all;
+$title-spacing: 3px;
+//responsive
+// $desctop: "(min-width: 1200px) and (max-width: 1199px)";
+// $tablet: "(min-width: 992px) and (max-width: 991px)";
+// $mobile: "(min-width: 768px) and (max-width: 767px)";
+$desctop_only: "(min-width: 992px) and (max-width: 1199px)";
+$tablet_only: "(min-width: 768px) and (max-width: 991px)";
+
+$full-hd: "screen and (max-width: 1869px)";
+$desctop-lg: "screen and (max-width: 1669px)";
+$desctop-md: "screen and (max-width: 1469px)";
+
+$desctop: "screen and (max-width: 1199px)";
+$tablet: "screen and (max-width: 991px)";
+$mobile: "screen and (max-width: 767px)";
+
+//MIXINS
+
+$prefixes: "-webkit-", "-o-", "-moz-", "-ms-";
+
+@mixin addPrefix($item, $val) {
+	@each $tmp in $prefixes {
+		#{$tmp}#{$item}:#{$val};
+	}
+	#{$item}: $val;
+}
+
+$prefixes-placeholder: "&::-webkit-input-", "&::-moz-", "&:-moz-", "&:-ms-";
+
+@mixin addPrefixPlaceholder($placeholder, $item, $val) {
+	@each $tmp in $prefixes-placeholder {
+		#{$tmp}#{$placeholder}{#{$item}:#{$val}};
+	}
+	#{$placeholder}{#{$item}: $val};
+}

@@ -1,0 +1,214 @@
+extends ../base
+
+block title
+	title Faculties
+
+block main
+	.content.content-fac
+		section.section.banner-fac(style='background-image: url(' + require("./images/banner.jpg") + ')')
+			.banner-div_overlay
+				.container
+					h1 Факультети
+					ul 
+						li 
+							a(href="./") Головна
+						li 
+							a(href="faculties.html") Факультети
+						
+						li 
+							a(href="divisions.html") Підрозділи
+		section.section.main_title
+			.container
+				h1.section_title Факультет економіки і права
+		section.section.departments 
+			.container.container_content
+				.departments_block
+					.section_title 
+						h2 Кафедри
+					ul.clearfix
+						li
+							a(href="#")
+								| 01
+								br
+								| Кафедра економіки підприємства та менеджменту	
+						li
+							a(href="#")
+								| 02
+								br 
+								| Кафедра економіки та соціальних наук
+						li
+							a(href="#") 
+								| 03
+								br
+								| Кафедра соціології та психології
+						li
+							a(href="#") 
+								| 04
+								br
+								| Кафедра правового регулювання економіки
+						li
+							a(href="#") 
+								| 05
+								br
+								| Кафедра державного управління, публічного адміністрування та регіональної економіки
+						li
+							a(href="#") 
+								| 06
+								br
+								| Кафедра управління соіальними комунікаціями
+						li
+							a(href="#") 
+								| 07
+								br
+								| Кафедра педагогіки та іноземної філології комунікаціями
+		section.section.fac-types
+			.container.container_content
+				div.row
+					.fac-types_block
+						div.col-sm-6.col-xs-12.col-sm-push-6
+							.fac-types_block_img(style='background-image:url(' + require("./images/photo-5.jpg") + ')')
+						div.col-sm-6.col-xs-12.col-sm-pull-6
+							p.fac-types_block_post Декан факультету – кандидат економічних наук, доцент 
+							h5.fac-types_block_name Сєрікова Тетяна Миколаївна.
+							h6.fac-types_block_conditions Умови для навчання на факультеті
+							p.fac-types_block_text.
+								Високий рівень  професорсько-викладацького складу,  розвинена інфраструктура забезпечують якість методичного та наукового процесу навчання.
+							p.fac-types_block_text.
+								До навчальних програм включене поглиблене вивчення правових дисциплін,  безперервна комп'ютерна підготовка, що є необхідною умовою формування майбутнього компетентного економіста. Широко використовуються активні форми навчання такі, як проблемні лекції, ситуаційні семінари, рольові ігри, тренінги, виконання індивідуальних завдань практичного напрямку.
+						
+				.fac-types_quote
+					h3 Поєднання економiчних 
+						br
+						| i правових знань 
+						br
+						| формує 
+						br
+						| сучасного економiста.
+		section.section.contact-us
+			.contact-us_overlay
+				.container.container_content
+					div.row
+						.contact-us_blk
+							div.col-sm-6
+								.contact-us_title Contact us
+							div.col-sm-6
+								p.contact-us_text Зв'язок з нами
+								ul.contact-us_menu
+									li.contact-us_menu_list Рік заснування - 1983
+									li.contact-us_menu_list 61166, м.Харків, пр-т Науки, 9а, ХНЕУ, Другий навчальний корпус, ауд. 45-47.
+									li.contact-us_menu_list 
+										a(href="tel:+380577020547") Тел. +38(057)702-05-47
+									li.contact-us_menu_list Факс: +38(057)702-07-17
+									li.contact-us_menu_list 
+										a(href="http://www.ep.hneu.edu.ua/") Сайт: http://www.ep.hneu.edu.ua/
+									li.contact-us_menu_list 
+										a(href="mailto:dekep@hneu.edu.ua") E-mail: dekep@hneu.edu.ua
+		section.section.fac-programs
+			.container.container_content
+				.section_title 
+					h2 Основні програми факультету
+				div.row
+					.fac-programs_blk
+						div.col-lg-6.col-md-8
+							.fac-programs_box
+								p.fac-programs_term Термін навчання - 4 роки.
+								h4.fac-programs_name Перший рівень вищої освіти «Бакалавр».
+								#accordion.panel-group
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion', href='#collapse1')
+											| Спеціальність 051 "Економіка"
+										#collapse1.panel-collapse.collapse.in
+											.panel-body
+												ul
+													li - економіка підприємства
+													li - управління персоналом та економіка праці
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion', href='#collapse2')
+											| Спеціальність 061 "Журналістика"
+										#collapse2.panel-collapse.collapse
+											.panel-body
+												ul
+													li - економіка підприємства
+													li - управління персоналом та економіка праці
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion', href='#collapse3')
+											| Спеціальність 073 "Менеджмент"
+										#collapse3.panel-collapse.collapse
+											.panel-body
+												ul
+													li - економіка підприємства
+													li - управління персоналом та економіка праці
+													li - управління персоналом та економіка праці	
+						div.col-lg-6.col-md-4
+							.fac-programs_img(style='background-image: url(' + require('./images/photo-6.jpg') + ')')
+				
+				div.row
+					.fac-programs_blk
+						div.col-lg-6.col-md-4
+							.fac-programs_img(style='background-image: url(' + require("./images/background-contacts.jpg") + ')')
+						div.col-lg-6.col-md-8
+							.fac-programs_box
+								p.fac-programs_term Термін навчання - 1,4 роки.
+								h4.fac-programs_name Другий рівень вищої освіти «Магістр».
+								#accordion2.panel-group
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse4')
+											| Спеціальність 011 "Освітні, педагогічні науки"
+										#collapse4.panel-collapse.collapse.in
+											.panel-body
+												ul
+													li - педагогіка вищої школи
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse5')
+											| Спеціальність 051 "Економіка"
+										#collapse5.panel-collapse.collapse
+											.panel-body
+												ul
+													li - економіка підприємства
+													li - управління персоналом та економіка праці
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse6')
+											| Спеціальність 061 "Журналістика"
+										#collapse6.panel-collapse.collapse
+											.panel-body
+												ul
+													li - економіка підприємства
+													li - управління персоналом та економіка праці
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse7')
+											| Спеціальність 073 "Менеджмент"
+										#collapse7.panel-collapse.collapse
+											.panel-body
+												ul
+													li - економіка підприємства
+													li - управління персоналом та економіка праці
+													li - управління персоналом та економіка праці
+									.panel
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse8')
+											| Спеціальність 073 "Менеджмент"
+										#collapse8.panel-collapse.collapse
+											.panel-body
+												ul
+													li - Спеціальність 074 «Публічне управління та адміністрування» «Журналістика»
+				div.row
+					.fac-programs_blk
+						div.col-lg-6.col-md-8
+							.fac-programs_box
+								h4.fac-programs_name Кафедри факультету
+								ul.fac-programs_menu
+									li - Кафедра економіки підприємства та менеджменту
+									li - Кафедра економіки та соціальних наук
+									li - Кафедра соціології та психології управління
+									li - Кафедра правового регулювання економіки
+									li - Кафедра державного управління, публічного адміністрування та регіональної економіки
+									li -Кафедра управління соціальними комунікаціями
+									li - Кафедра педагогіки та іноземної філології
+						div.col-lg-6.col-md-4
+							.fac-programs_img(style='background-image: url(' + require("./images/photo-7.jpg") + ')')
+		section.section
+			.container.container_content
+				p.views Кiлькiсть переглядiв:
+					span 30000
+		section.section.map
+			.map_blk#map
+		include ../footer

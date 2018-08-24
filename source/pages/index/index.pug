@@ -1,0 +1,340 @@
+extends ../base
+
+block title
+	title Index
+block headscript
+	//- script.
+	//- 	var showheader = document.getElementById('header');
+	//- 	showheader.style.visibility = 'hidden';
+	style.
+		.header {
+			visibility: hidden;
+		}
+//- block header
+//- 	.header
+block main
+	.layout-screen#Layout(style="")
+		//- h1.first-title 
+		//- 	|	Харківський національний
+		//- 	br
+		//- 	|	економічний університет
+		//- 	brwrapper
+		//- 	|	імені Семена Кузнеця
+		include ../letters
+	.wrapper#wrapper
+		.content#content
+			.section.banner.anchor#anchor1
+				.banner_content
+					.slider.slick-for
+						div
+							.slick-for_blk(style='background-image:url(' + require("./images/banner.jpg") + ')')
+								.slick-for_overlay
+									.container
+										.slick-for_box
+											h1.banner_title Відкриття тижня Бізнес-адміністрування та днів самоврядування
+											p.banner_text
+												| 19 жовтня 2017 року відбулося відкриття тижня Бізнес-адміністрування, а також презентація днів самоврядування для студентів спеціалізації «Бізнес-адміністрування».
+											a(href="#").btn Читати ще
+						div
+							.slick-for_blk(style='background-image:url(' + require("./images/photo-1.jpg") + ')')
+								.slick-for_overlay
+									.container
+										.slick-for_box
+											h1.banner_title Відкриття тижня Бізнес-адміністрування та днів самоврядування
+											p.banner_text
+												| 19 жовтня 2017 року відбулося відкриття тижня Бізнес-адміністрування, а також презентація днів самоврядування для студентів спеціалізації «Бізнес-адміністрування».
+											a(href="#").btn Читати ще
+						div
+							.slick-for_blk(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+								.slick-for_overlay
+									.container
+										.slick-for_box
+											h1.banner_title Відкриття тижня Бізнес-адміністрування та днів самоврядування
+											p.banner_text
+												| 19 жовтня 2017 року відбулося відкриття тижня Бізнес-адміністрування, а також презентація днів самоврядування для студентів спеціалізації «Бізнес-адміністрування».
+											a(href="#").btn Читати ще
+						div
+							.slick-for_blk(style='background-image:url(' + require("./images/photo-3.jpg") + ')')
+								.slick-for_overlay
+									.container
+										.slick-for_box
+											h1.banner_title Відкриття тижня Бізнес-адміністрування та днів самоврядування
+											p.banner_text
+												| 19 жовтня 2017 року відбулося відкриття тижня Бізнес-адміністрування, а також презентація днів самоврядування для студентів спеціалізації «Бізнес-адміністрування».
+											a(href="#").btn Читати ще
+						div
+							.slick-for_blk(style='background-image:url(' + require("./images/photo-4.jpg") + ')')
+								.slick-for_overlay
+									.container
+										.slick-for_box
+											h1.banner_title Відкриття тижня Бізнес-адміністрування та днів самоврядування
+											p.banner_text
+												| 19 жовтня 2017 року відбулося відкриття тижня Бізнес-адміністрування, а також презентація днів самоврядування для студентів спеціалізації «Бізнес-адміністрування».
+											a(href="#").btn Читати ще
+						div
+							.slick-for_blk(style='background-image:url(' + require("./images/photo-3.jpg") + ')')
+								.slick-for_overlay
+									.container
+										.slick-for_box
+											h1.banner_title Відкриття тижня Бізнес-адміністрування та днів самоврядування
+											p.banner_text
+												| 19 жовтня 2017 року відбулося відкриття тижня Бізнес-адміністрування, а також презентація днів самоврядування для студентів спеціалізації «Бізнес-адміністрування».
+											a(href="#").btn Читати ще
+					.slick-navigation.container_content
+						.section_title 
+							h2 Новини
+						.slider.slick-nav
+							div
+								.slick-nav_box
+									.slick-nav_img(style='background-image:url(' + require("./images/banner.jpg") + ')')
+										.slick-nav_overlay
+											h3 Anons
+									.slick-nav_bottom
+										.slick-nav_bottom_data.clearfix
+											.section-type News
+											.day 28
+											.month вересень
+											.time 5:00
+										.slick-nav_bottom_name Відкриття тижня Бізнес - lorem адміністрування
+							div
+								.slick-nav_box
+									.slick-nav_img(style='background-image:url(' + require("./images/photo-1.jpg") + ')')
+										.slick-nav_overlay
+											h3 News
+									.slick-nav_bottom
+										.slick-nav_bottom_data.clearfix
+											.section-type Anons
+											.day 28
+											.month вересень
+											.time 5:00
+										.slick-nav_bottom_name Відкриття тижня Бізнес - lorem адміністрування
+							div
+								.slick-nav_box
+									.slick-nav_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+										.slick-nav_overlay
+											h3 Anons
+									.slick-nav_bottom
+										.slick-nav_bottom_data.clearfix
+											.section-type News
+											.day 28
+											.month вересень
+											.time 5:00
+										.slick-nav_bottom_name Відкриття тижня Бізнес - lorem адміністрування
+							div
+								.slick-nav_box
+									.slick-nav_img(style='background-image:url(' + require("./images/photo-3.jpg") + ')')
+										.slick-nav_overlay
+											h3 News
+									.slick-nav_bottom
+										.slick-nav_bottom_data.clearfix
+											.section-type Anons
+											.day 28
+											.month вересень
+											.time 5:00
+										.slick-nav_bottom_name Відкриття тижня Бізнес - lorem адміністрування
+							div
+								.slick-nav_box
+									.slick-nav_img(style='background-image:url(' + require("./images/photo-4.jpg") + ')')
+										.slick-nav_overlay
+											h3 Anons
+									.slick-nav_bottom
+										.slick-nav_bottom_data.clearfix
+											.section-type News
+											.day 28
+											.month вересень
+											.time 5:00
+										.slick-nav_bottom_name Відкриття тижня Бізнес - lorem адміністрування
+							div
+								.slick-nav_box
+									.slick-nav_img(style='background-image:url(' + require("./images/photo-3.jpg") + ')')
+										.slick-nav_overlay
+											h3 News
+									.slick-nav_bottom
+										.slick-nav_bottom_data.clearfix
+											.section-type Anons
+											.day 28
+											.month вересень
+											.time 5:00
+										.slick-nav_bottom_name Відкриття тижня Бізнес - lorem адміністрування
+			section.section.announce.anchor#anchor2
+				.container.container_content
+					.section_title
+						h2
+							a(href="anons.html") Анонси
+					.announce_block
+						.row
+							.col-md-3.col-sm-6
+								.announce_box
+									.announce_img(style='background-image:url(' + require("./images/photo-3.jpg") + ')')
+									.announce_data.clearfix
+										.section-type Anons
+										.month вересень
+										.day 28
+										.year 2017
+									.announce_name Відкриття тижня Бізнес - lorem адміністрування
+									p.announce_text.
+										Ми навчаємо вчитися, мислити, працювати. Недостатньо оволодіти знаннями – потрібно їх ефективно використовувати. Недостатньо використо- вувати знання...
+							.col-md-3.col-sm-6
+								.announce_box
+									.announce_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+									.announce_data.clearfix
+										.section-type Anons
+										.month вересень
+										.day 28
+										.year 2017
+									.announce_name Відкриття тижня Бізнес - lorem адміністрування
+									p.announce_text.
+										Ми навчаємо вчитися, мислити, працювати. Недостатньо оволодіти знаннями – потрібно їх ефективно використовувати. Недостатньо використо- вувати знання...
+							.col-md-3.col-sm-6
+								.announce_box
+									.announce_img(style='background-image:url(' + require("./images/photo-4.jpg") + ')')
+									.announce_data.clearfix
+										.section-type Anons
+										.month вересень
+										.day 28
+										.year 2017
+									.announce_name Відкриття тижня Бізнес - lorem адміністрування
+									p.announce_text.
+										Ми навчаємо вчитися, мислити, працювати. Недостатньо оволодіти знаннями – потрібно їх ефективно використовувати. Недостатньо використо- вувати знання...
+							.col-md-3.col-sm-6
+								.announce_box
+									.announce_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+									.announce_data.clearfix
+										.section-type Anons
+										.month вересень
+										.day 28
+										.year 2017
+									.announce_name Відкриття тижня Бізнес - lorem адміністрування
+									p.announce_text.
+										Ми навчаємо вчитися, мислити, працювати. Недостатньо оволодіти знаннями – потрібно їх ефективно використовувати. Недостатньо використо- вувати знання...			
+			section.section.newspaper
+				.container.container_content
+					.section_title
+						h2 Газета
+					.newspaper_block
+						.row
+							.col-sm-6
+								.newspaper_left
+									.newspaper_box
+										.newspaper_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+										.newspaper_data.clearfix
+											.section-type News
+											.month вересень
+											.day 28
+											.year 2017
+										.newspaper_name 
+											| ХНЕУ ім. С. Кузнеця приймав участь у
+											span «Тижні Німеччини» в Харкові
+										p.newspaper_text.
+											Ми навчаємо вчитися, мислити, працювати. Недостатньо оволодіти знаннями – потрібно їх ефективно використовувати. Недостатньо використо- вувати знання – потрібно їх продукувати. Перевагами навчання ...
+							.col-sm-6
+								.newspaper_right.clearfix
+									.col-sm-6
+										.newspaper_box
+											.newspaper_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+											.newspaper_data.clearfix
+												.section-type News
+												.month вересень
+												.day 28
+												.year 2017
+											.newspaper_name Відкриття тижня Бізнес - lorem адміністрування
+											p.newspaper_text.
+												Ми навчаємо вчитися, мислити, працювати...
+									.col-sm-6
+										.newspaper_box
+											.newspaper_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+											.newspaper_data.clearfix
+												.section-type News
+												.month вересень
+												.day 28
+												.year 2017
+											.newspaper_name Відкриття тижня Бізнес - lorem адміністрування
+											p.newspaper_text.
+												Ми навчаємо вчитися, мислити, працювати...
+									.col-sm-6
+										.newspaper_box
+											.newspaper_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+											.newspaper_data.clearfix
+												.section-type News
+												.month вересень
+												.day 28
+												.year 2017
+											.newspaper_name Відкриття тижня Бізнес - lorem адміністрування
+											p.newspaper_text.
+												Ми навчаємо вчитися, мислити, працювати...
+									.col-sm-6
+										.newspaper_box
+											.newspaper_img(style='background-image:url(' + require("./images/photo-2.jpg") + ')')
+											.newspaper_data.clearfix
+												.section-type News
+												.month вересень
+												.day 28
+												.year 2017
+											.newspaper_name Відкриття тижня Бізнес - lorem адміністрування
+											p.newspaper_text.
+												Ми навчаємо вчитися, мислити, працювати...
+			section.section.partners
+				.container.container_content
+					.section_title 
+						h2 Партнери
+				.container.container_content(style="overflow: initial")
+					section.slider.slick-partners
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-1.png"), alt="First Capital")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-2.png"), alt="ATILOG.UA")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-3.png"), alt="Microsoft")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-4.png"), alt="Golden Compass")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-5.png"), alt="Unit Space")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-6.png"), alt="IBM")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-7.png"), alt="Завтра UA")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-1.png"), alt="First Capital")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-2.png"), alt="ATILOG.UA")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-3.png"), alt="Microsoft")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-4.png"), alt="Golden Compass")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-5.png"), alt="Unit Space")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-6.png"), alt="IBM")
+						div
+							.slick-partners_box
+								img(src=require("./images/partner-7.png"), alt="Завтра UA")
+			//- section.banners
+			//- 	.container
+			//- 		.banners_block
+			//- 			section.slider.slick-banners
+			//- 				div
+			//- 					.slick-banners_box
+			//- 						img(src=require("./images/min_osv.png"), alt="")
+			//- 				div
+			//- 					.slick-banners_box
+			//- 						img(src=require("./images/ukc.png"), alt="")
+			section.section.map
+				.section_title
+					.container.container_content
+						h2 Ми на карті
+				.map_blk#map
+			include ../footer
+block scripts

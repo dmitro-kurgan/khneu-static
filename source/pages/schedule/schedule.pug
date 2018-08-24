@@ -1,0 +1,98 @@
+extends ../base
+
+block title
+	title Shedule
+block headscript
+	script.
+		function startTime() {
+		var tm=new Date();
+		var h=tm.getHours();
+		var m=tm.getMinutes();
+		var s=tm.getSeconds();
+		m=checkTime(m);
+		s=checkTime(s);
+		document.getElementById('time').innerHTML=h+":"+m+":"+s;
+		t=setTimeout('startTime()',500);
+
+		}
+		function checkTime(i) {
+		if (i<10) {
+		i="0" + i;
+		}
+		return i;
+		}
+		
+block main
+	.content.content-schedule
+		section.section.banner-news(style='background-image: url(' + require("./images/photo-14.jpg") + ')')
+			.banner-div_overlay
+				.container
+					h1 Розклад дзвiнкiв 
+						|
+						br 
+						|та електроний розклад
+					ul 
+						li 
+							a(href="./") Головна
+						li 
+							a(href="divisions.html") Підрозділи
+						
+						li 
+							a(href="#") Молодіжна організація
+		section.section.schedule
+			.container
+				.schedule_blk.clearfix
+					ul.row
+						li.col-md-6.col-xs-12.col-md-push-6
+							.schedule_time
+								.schedule_time_box
+									p.time#time
+									p.location (GMT+3), Київ
+							.schedule_day
+								.today
+									.day#day
+									.month#month
+								.calendar#calendar
+						li.col-md-6.col-xs-12.col-md-pull-6
+							.schedule_classes
+								table.table
+									tbody
+										tr#tr1
+											td
+												p 1 пара
+											td
+												p 08.30 – 09.15 - 09.20 – 10.05
+										tr#tr2
+											td
+												p 2 пара
+											td
+												p 10.15 – 11.00 - 11.05 – 11.50 
+										tr#tr3
+											td 
+												p 3 пара
+											td 
+												p 12.10 – 12.55 - 13.00 – 13.45
+										tr#tr4
+											td 
+												p 4 пара
+											td 
+												p 13.55 – 14.40 - 14.45 – 15.30
+										tr#tr5
+											td 
+												p 5 пара
+											td 
+												p 15.50 – 16.35 - 16.40 – 17.25
+										tr#tr6
+											td 
+												p 6 пара
+											td 
+												p 17.35 – 18.20 - 18.25 – 19.10
+										tr#tr7
+											td 
+												p 7 пара
+											td 
+												p 19.20 – 20.05 - 20.10 – 20.55
+					p.schedule_name електронний розклад
+		section.section.map
+			.map_blk#map
+		include ../footer
